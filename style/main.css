@@ -1,0 +1,365 @@
+body {
+  font-family: "Dancing Script", cursive;
+  margin: 0;
+  background-color: #ffd1dc;
+  color: #ff1493;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 100vw;
+}
+
+.container > div {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20vh;
+}
+
+.one {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.two {
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+
+.three {
+  font-size: 3rem;
+}
+
+.four .text-box {
+  border: 3px solid #ff69b4;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  width: 600px;
+  background-color: #fff0f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-box p {
+  margin: 0;
+  text-align: left;
+}
+
+.text-box .fake-btn {
+  background-color: #ff69b4;
+  border-radius: 3px;
+  bottom: -50px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.text-box .fake-btn:hover {
+  background-color: #ff1493;
+}
+
+.four .text-box {
+  border: 3px solid #ff69b4;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  width: 600px;
+  background-color: #fff0f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-box p {
+  margin: 0;
+  text-align: left;
+  font-size: 1.2em; /* Increased font size */
+  line-height: 1.5; /* Improved line height for readability */
+}
+
+.hbd-chatbox {
+  visibility: hidden;
+}
+
+.hbd-chatbox span {
+  visibility: hidden;
+}
+
+.five p {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.idea-3 strong {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: #ff69b4;
+  color: white;
+}
+
+.five .idea-5 {
+  font-size: 4rem;
+}
+
+.idea-5 span,
+.idea-6 span,
+.wish-hbd span {
+  display: inline-block;
+}
+
+.idea-6 span {
+  font-size: 15rem;
+}
+
+.six {
+  position: relative;
+  top: 10vh;
+  z-index: 1;
+}
+
+.six img {
+  display: inline-block;
+  height: 350px;
+  max-width: 100%;
+  filter: drop-shadow(0 0 10px #821c4f);
+}
+
+.six .hat {
+  left: 38.5%;
+  position: absolute;
+  top: -40%;
+  width: 80px;
+  filter: hue-rotate(300deg);
+  transform: rotate(-45deg);
+}
+
+.baloons img {
+  display: inline-block;
+  position: absolute;
+}
+
+.baloons img:nth-child(even) {
+  left: -10%;
+}
+
+.baloons img:nth-child(odd) {
+  right: -10%;
+}
+
+.baloons img:nth-child(3n + 0) {
+  left: 30%;
+}
+
+.eight svg {
+  width: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.eight svg:nth-child(1) {
+  fill: #ff69b4;
+  left: 5vw;
+  top: 7vh;
+}
+
+.eight svg:nth-child(2) {
+  fill: #ff1493;
+  left: 35vw;
+  top: 23vh;
+}
+
+.eight svg:nth-child(3) {
+  fill: #ffb6c1;
+  left: 23vw;
+  top: 33vh;
+}
+
+.eight svg:nth-child(4) {
+  fill: #ff69b4;
+  left: 57vw;
+  top: 43vh;
+}
+
+.eight svg:nth-child(5) {
+  fill: #ff1493;
+  left: 7vw;
+  top: 68vh;
+}
+
+.eight svg:nth-child(6) {
+  fill: #ffb6c1;
+  left: 77vw;
+  top: 42vh;
+}
+
+.eight svg:nth-child(7) {
+  fill: #ff69b4;
+  left: 83vw;
+  top: 68vh;
+}
+
+.eight svg:nth-child(8) {
+  fill: #ff1493;
+  left: 37vw;
+  top: 86vh;
+}
+
+.eight svg:nth-child(9) {
+  fill: #ffb6c1;
+  left: 87vw;
+  top: 94vh;
+}
+
+.wish-hbd {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.wish h5 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 10px 0 0;
+}
+
+.nine p {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+#replay {
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* Media Queries */
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .one {
+    font-size: 3rem;
+  }
+
+  .two {
+    font-size: 1.3rem;
+  }
+
+  .three {
+    font-size: 2rem;
+  }
+
+  .four .text-box {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .text-box p {
+    font-size: 1em;
+  }
+
+  .text-box .fake-btn {
+    right: 5px;
+    bottom: -38px;
+  }
+
+  .idea-5 span {
+    display: block;
+  }
+
+  .idea-6 span {
+    font-size: 8rem;
+  }
+
+  .six img {
+    height: auto;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .six .hat {
+    width: 40px;
+    top: -30px;
+    left: 80px;
+  }
+
+  .wish-hbd {
+    font-size: 2.2em;
+  }
+
+  .wish h5 {
+    font-size: 1.4rem;
+  }
+
+  .nine p {
+    font-size: 1.2rem;
+  }
+
+  /* Removed balloon-specific adjustments for mobile */
+
+  .barbie-logo {
+    width: 200px;
+  }
+}
+
+/* Additional breakpoint for even smaller screens */
+@media screen and (max-width: 480px) {
+  .one {
+    font-size: 2.5rem;
+  }
+
+  .two {
+    font-size: 1.1rem;
+  }
+
+  .three {
+    font-size: 1.8rem;
+  }
+
+  .four .text-box {
+    width: 95%;
+  }
+
+  .idea-6 span {
+    font-size: 6rem;
+  }
+
+  .six img {
+    width: 90%;
+  }
+
+  .six .hat {
+    width: 35px;
+    top: -15px;
+    left: 5px;
+  }
+
+  .wish-hbd {
+    font-size: 1.8em;
+  }
+
+  .wish h5 {
+    font-size: 1.2rem;
+  }
+
+  .nine p {
+    font-size: 1rem;
+  }
+}
